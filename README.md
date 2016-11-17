@@ -1,3 +1,2 @@
-# fluentd
-
-This is a fluentd.conf for transforming hosts and vms metrics collected by Collectd and send them to Elasticsearch.
+# oVirt Metrics conf
+This repository stores the configuration files required to send oVirt hosts and VMs metrics to a remote metrics store.
