@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>ovirt-fluentd-forward</short>
+  <description>oVirt configured fluentd forward service</description>
+  <port protocol="tcp" port="4000"/>
+</service>
