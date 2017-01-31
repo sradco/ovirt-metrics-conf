@@ -1,0 +1,507 @@
+mappings for ovirt-metrics-2017.01.31
+{
+  "fluentd": {
+    "dynamic_templates": [
+      {
+        "strings": {
+          "mapping": {
+            "index": "not_analyzed",
+            "type": "string"
+          },
+          "match_mapping_type": "string",
+          "match": "*"
+        }
+      }
+    ],
+    "_all": {
+      "enabled": false
+    },
+    "properties": {
+      "df": {
+        "properties": {
+          "percent_bytes": {
+            "properties": {
+              "value": {
+                "type": "double"
+              }
+            }
+          },
+          "df_complex": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          }
+        }
+      },
+      "memory": {
+        "properties": {
+          "memory": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "percent": {
+            "properties": {
+              "value": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "aggregation": {
+        "properties": {
+          "percent": {
+            "properties": {
+              "value": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "interface": {
+        "properties": {
+          "if_packets": {
+            "properties": {
+              "tx": {
+                "type": "double"
+              },
+              "rx": {
+                "type": "double"
+              }
+            }
+          },
+          "if_errors": {
+            "properties": {
+              "tx": {
+                "type": "long"
+              },
+              "rx": {
+                "type": "long"
+              }
+            }
+          },
+          "if_dropped": {
+            "properties": {
+              "tx": {
+                "type": "long"
+              },
+              "rx": {
+                "type": "long"
+              }
+            }
+          },
+          "if_octets": {
+            "properties": {
+              "tx": {
+                "type": "long"
+              },
+              "rx": {
+                "type": "long"
+              }
+            }
+          }
+        }
+      },
+      "type": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "dstypes": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "hostname": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "entropy": {
+        "properties": {
+          "entropy": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          }
+        }
+      },
+      "load": {
+        "properties": {
+          "load": {
+            "properties": {
+              "longterm": {
+                "type": "double"
+              },
+              "shortterm": {
+                "type": "double"
+              },
+              "midterm": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "tag": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "processes": {
+        "properties": {
+          "ps_count": {
+            "properties": {
+              "processes": {
+                "type": "long"
+              },
+              "threads": {
+                "type": "long"
+              }
+            }
+          },
+          "ps_state": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "ps_vm": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "ps_cputime": {
+            "properties": {
+              "syst": {
+                "type": "double"
+              },
+              "user": {
+                "type": "double"
+              }
+            }
+          },
+          "ps_pagefaults": {
+            "properties": {
+              "majflt": {
+                "type": "long"
+              },
+              "minflt": {
+                "type": "double"
+              }
+            }
+          },
+          "ps_data": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "ps_rss": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "ps_code": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "ps_stacksize": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "fork_rate": {
+            "properties": {
+              "value": {
+                "type": "double"
+              }
+            }
+          },
+          "ps_disk_octets": {
+            "properties": {
+              "read": {
+                "type": "double"
+              },
+              "write": {
+                "type": "double"
+              }
+            }
+          },
+          "ps_disk_ops": {
+            "properties": {
+              "read": {
+                "type": "double"
+              },
+              "write": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "plugin_instance": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "type_instance": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "swap": {
+        "properties": {
+          "swap": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "swap_io": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          }
+        }
+      },
+      "statsd": {
+        "properties": {
+          "nic_speed": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "nic_rx_dropped": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "memory": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "swap": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "cpu": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "nic_rx_errors": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "storage": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "nic_tx": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "nic_tx_dropped": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "nic_rx": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "elapsed_time": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "vms": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          },
+          "nic_tx_errors": {
+            "properties": {
+              "value": {
+                "index": "not_analyzed",
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "cpu": {
+        "properties": {
+          "percent": {
+            "properties": {
+              "value": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "host_id": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "dsnames": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "disk": {
+        "properties": {
+          "disk_ops": {
+            "properties": {
+              "read": {
+                "type": "long"
+              },
+              "write": {
+                "type": "double"
+              }
+            }
+          },
+          "disk_octets": {
+            "properties": {
+              "read": {
+                "type": "long"
+              },
+              "write": {
+                "type": "double"
+              }
+            }
+          },
+          "pending_operations": {
+            "properties": {
+              "value": {
+                "type": "long"
+              }
+            }
+          },
+          "disk_time": {
+            "properties": {
+              "read": {
+                "type": "long"
+              },
+              "write": {
+                "type": "long"
+              }
+            }
+          },
+          "disk_io_time": {
+            "properties": {
+              "weighted_io_time": {
+                "type": "long"
+              },
+              "io_time": {
+                "type": "long"
+              }
+            }
+          },
+          "disk_merged": {
+            "properties": {
+              "read": {
+                "type": "long"
+              },
+              "write": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "@timestamp": {
+        "format": "strict_date_optional_time||epoch_millis",
+        "type": "date"
+      },
+      "plugin": {
+        "index": "not_analyzed",
+        "type": "string"
+      },
+      "meta": {
+        "properties": {
+          "aggregation:created": {
+            "type": "boolean"
+          }
+        }
+      },
+      "interval": {
+        "type": "double"
+      },
+      "nfs": {
+        "properties": {
+          "nfs_procedure": {
+            "properties": {
+              "value": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      },
+      "entity": {
+        "index": "not_analyzed",
+        "type": "string"
+      }
+    }
+  }
+}
