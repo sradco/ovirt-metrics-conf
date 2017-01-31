@@ -286,104 +286,91 @@ mappings for ovirt-metrics-2017.01.31
           "nic_speed": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "nic_rx_dropped": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "memory": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "swap": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "cpu": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "nic_rx_errors": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "storage": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "double"
               }
             }
           },
           "nic_tx": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "nic_tx_dropped": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "nic_rx": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "elapsed_time": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "double"
               }
             }
           },
           "vms": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           },
           "nic_tx_errors": {
             "properties": {
               "value": {
-                "index": "not_analyzed",
-                "type": "string"
+                "type": "long"
               }
             }
           }
@@ -416,7 +403,7 @@ mappings for ovirt-metrics-2017.01.31
                 "type": "long"
               },
               "write": {
-                "type": "double"
+                "type": "long"
               }
             }
           },
@@ -426,7 +413,7 @@ mappings for ovirt-metrics-2017.01.31
                 "type": "long"
               },
               "write": {
-                "type": "double"
+                "type": "long"
               }
             }
           },
@@ -443,7 +430,7 @@ mappings for ovirt-metrics-2017.01.31
                 "type": "long"
               },
               "write": {
-                "type": "long"
+                "type": "double"
               }
             }
           },
