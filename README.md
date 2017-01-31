@@ -16,6 +16,8 @@ Downloads: https://www.elastic.co/downloads/past-releases
  - Kibana 4.5.4
  - Grafana
 
+* Set your environment to UTC timezone.
+
 ## On the hosts:
 
 * Replaced the default /etc/collectd.conf with: [collectd.conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/hosts/collectd.conf)
