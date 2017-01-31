@@ -15,7 +15,8 @@ Downloads: https://www.elastic.co/downloads/past-releases
  - Fluentd 0.12.20
  - Kibana 4.5.4
  - Grafana
- - On the hosts:
+
+## On the hosts:
 
 * Replaced the default /etc/collectd.conf with: [collectd.conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/hosts/collectd.conf)
 
