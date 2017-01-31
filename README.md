@@ -9,17 +9,15 @@ I also installed Grafana for another UI option.
 
 Downloads: https://www.elastic.co/downloads/past-releases
 
-On my setup:
+* On my setup:
 
-Elasticsearch  2.3.5
-Fluentd 0.12.20
-Kibana 4.5.4
-Grafana
-On the hosts:
+ - Elasticsearch  2.3.5
+ - Fluentd 0.12.20
+ - Kibana 4.5.4
+ - Grafana
+ - On the hosts:
 
-* Replaced the default /etc/collectd.conf with:
-
-[collectd.conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/hosts/collectd.conf)
+* Replaced the default /etc/collectd.conf with: [collectd.conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/hosts/collectd.conf)
 
 
 * Installed fluent-plugin-rewrite-tag-filter:
@@ -29,18 +27,14 @@ Run:
 	Install /usr/share/gems/gems/fluentd-/bin/fluent-gem install fluent-plugin-rewrite-tag-filter
 
 
-* Updated /etc/fluentd/fluent.conf. :
-
-[fluent.conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/hosts/fluent.conf)
+* Updated /etc/fluentd/fluent.conf. : [fluent.conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/hosts/fluent.conf)
 
 
 ## On a central metrics store host:
 
 Install Fluentd, rubygem-fluent-plugin-elasticsearch,  Elasticsearch and Kibana.
 
-Update  /etc/fluentd/fluent.conf:
-
-[Central Fluentd conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/metrics-store/fluentd.conf)
+Updated  /etc/fluentd/fluent.conf: [Central Fluentd conf](https://github.com/sradco/ovirt-metrics-conf/blob/master/metrics-store/fluentd.conf)
 
 
 In /etc/elasticsearch/elasticsearch.yml
